@@ -27,9 +27,9 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         // should correspond to key/value pairs inside the file
-        buildConfigField("String", "PUBLIC_KEY", apikeyProperties['PUBLIC_KEY'])
-        buildConfigField("String", "PRIVATE_KEY", apikeyProperties['PRIVATE_KEY'])
-        buildConfigField("String", "BASE_URL", apikeyProperties['"https://gateway.marvel.com:443/v1/public/"'])
+        buildConfigField "String", "PUBLIC_KEY", apikeyProperties['PUBLIC_KEY']
+        buildConfigField "String", "PRIVATE_KEY", apikeyProperties['PRIVATE_KEY']
+        buildConfigField "String", "BASE_URL", apikeyProperties['"https://gateway.marvel.com:443/v1/public/"']
     }
 
     buildTypes {
