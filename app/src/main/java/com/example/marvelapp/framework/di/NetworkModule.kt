@@ -1,6 +1,6 @@
 package com.example.marvelapp.framework.di
 
-import com.example.core.data.network.interceptor.AuthorizationInterceptor
+import com.example.marvelapp.framework.network.interceptor.AuthorizationInterceptor
 import com.example.marvelapp.BuildConfig
 import dagger.Module
 import dagger.Provides
@@ -34,7 +34,7 @@ object NetworkModule {
     }
 
     @Provides
-    fun provideAuthorizationInterceptor():AuthorizationInterceptor{
+    fun provideAuthorizationInterceptor(): AuthorizationInterceptor {
         return AuthorizationInterceptor(
             publickey = BuildConfig.PUBLIC_KEY,
             privateKey = BuildConfig.PRIVATE_KEY,

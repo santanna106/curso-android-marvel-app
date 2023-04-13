@@ -1,4 +1,4 @@
-package com.example.core.data.network.response
+package com.example.marvelapp.framework.network.response
 
 data class ThumbnailResponse(val pah:String,
                              //@SerializedName("extension") => Se fosse necessário renomear o atributo de destino
