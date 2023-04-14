@@ -34,9 +34,9 @@ class CharactersFragment : Fragment() {
 
         charactersAdapter.submitList(
             listOf(
-                Character("3D-Man","https://i.annihil.us/u/prod/marvel/mg/c/e0/535fecbbb9784.jpg"),
-                Character("3D-Man","https://i.annihil.us/u/prod/marvel/mg/c/e0/535fecbbb9784.jpg"),
-                Character("3D-Man","https://i.annihil.us/u/prod/marvel/mg/c/e0/535fecbbb9784.jpg")
+                Character("3D-Man","https://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"),
+                Character("3D-Man","https://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"),
+                Character("3D-Man","https://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg")
 
             )
         )

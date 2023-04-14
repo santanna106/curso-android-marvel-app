@@ -2,7 +2,7 @@ package com.example.marvelapp.framework.di
 
 import androidx.paging.PagingSource
 import com.example.core.data.repository.CharacterRemoteDataSource
-import com.example.core.data.repository.ChararcterRepository
+import com.example.core.data.repository.CharactersRepository
 import com.example.core.domain.model.Character
 import com.example.marvelapp.framework.CharacterRepositoryImpl
 import com.example.marvelapp.framework.network.response.DataWrapperResponse
@@ -16,7 +16,9 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 interface RepositoryModule {
     @Binds
-    fun bindCharacterRepository(repository: CharacterRepositoryImpl) : ChararcterRepository<PagingSource<Int, Character>>
+    fun bindCharacterRepository(
+        repository: CharacterRepositoryImpl
+    ) : CharactersRepository
 
     @Binds
     fun bindRemoteDataSource(
