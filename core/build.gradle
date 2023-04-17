@@ -31,4 +31,6 @@ dependencies {
     //Coroutines core
     def coroutines_version = "1.6.4"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+
+    testImplementation project(":testing")
 }
