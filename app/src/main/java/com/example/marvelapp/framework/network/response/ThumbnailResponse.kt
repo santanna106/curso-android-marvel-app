@@ -1,6 +1,10 @@
 package com.example.marvelapp.framework.network.response
 
-data class ThumbnailResponse(val path:String,
-                             //@SerializedName("extension") => Se fosse necessário renomear o atributo de destino
-                             val extension:String
+import com.google.gson.annotations.SerializedName
+
+data class ThumbnailResponse(
+    @SerializedName("path")
+    val path:String,
+    @SerializedName("extension")
+    val extension:String
 )
